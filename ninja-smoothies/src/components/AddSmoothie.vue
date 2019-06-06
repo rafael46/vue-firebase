@@ -20,43 +20,45 @@
 
 <script>
 export default {
-  name: 'AddSmoothie',
-  data(){
-    return{
+  name: "AddSmoothie",
+  data() {
+    return {
       title: null,
       ingredients: [],
       another: null,
       feedback: null
-    }
+    };
   },
   methods: {
-    addSmoothie(){
-      console.log(this.title, this.ingredients)
+    addSmoothie() {
+      console.log(this.title, this.ingredients);
     },
-    addIng(){
-      if(this.another){
-        this.ingredients.push(this.another)
-        this.another = null
-        this.feedback = null
+    addIng() {
+      if (this.another) {
+        this.ingredients.push(this.another);
+        console.log(this.ingredients);
+
+        this.another = null;
+        this.feedback = null;
       } else {
-        this.feedback = 'You must enter a value to an an ingredient'
+        this.feedback = "You must enter a value to add an ingredient";
       }
     }
   }
-}
+};
 </script>
 
 <style>
-.add-smoothie{
+.add-smoothie {
   margin-top: 60px;
   padding: 20px;
   max-width: 500px;
 }
-.add-smoothie h2{
+.add-smoothie h2 {
   font-size: 2em;
   margin: 20px auto;
 }
-.add-smoothie .field{
+.add-smoothie .field {
   margin: 20px auto;
 }
 </style>
