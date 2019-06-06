@@ -19,32 +19,32 @@
 
 <script>
 export default {
-  name: 'AddSmoothie',
-  data(){
-    return{
+  name: "AddSmoothie",
+  data() {
+    return {
       title: null,
       ingredients: []
-    }
+    };
   },
   methods: {
-    addSmoothie(){
-      console.log(this.title)
+    addSmoothie() {
+      console.log(this.title);
     }
   }
-}
+};
 </script>
 
 <style>
-.add-smoothie{
+.add-smoothie {
   margin-top: 60px;
   padding: 20px;
   max-width: 500px;
 }
-.add-smoothie h2{
+.add-smoothie h2 {
   font-size: 2em;
   margin: 20px auto;
 }
-.add-smoothie .field{
+.add-smoothie .field {
   margin: 20px auto;
 }
 </style>
